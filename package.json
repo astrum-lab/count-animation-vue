@@ -1,0 +1,72 @@
+{
+  "name": "count-animation-vue",
+  "version": "1.0.0",
+  "description": "Animation numbers count for VueJS",
+  "main": "dist/count-animation.common.js",
+  "module": "dist/count-animation.umd.min.js",
+  "files": [
+    "dist/*.{js,css}"
+  ],
+  "private": false,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build --target lib --name count-animation src/index.js",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "core-js": "^3.8.3",
+    "count_animation": "^1.1.10",
+    "vue": "^3.2.13"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-vue": "^8.0.3"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "@babel/eslint-parser"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkbek/count-animation-vue.git"
+  },
+  "keywords": [
+    "animate",
+    "count-animate",
+    "count",
+    "animate",
+    "count",
+    "number",
+    "animate",
+    "number-animate",
+    "number",
+    "intager"
+  ],
+  "author": "Muhammadiy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mkbek/count-animation-vue/issues"
+  },
+  "homepage": "https://github.com/mkbek/count-animation-vue#readme"
+}
