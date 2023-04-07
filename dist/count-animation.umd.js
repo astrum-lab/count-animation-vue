@@ -212,9 +212,8 @@ const __exports__ = /*#__PURE__*/(0,exportHelper/* default */.Z)(CountAnimationv
 const componentsList = components_namespaceObject?.default;
 const src_CountAnimation = {
   install(Vue) {
-    Object.keys(componentsList).forEach(name => {
-      Vue.component(name, componentsList[name]);
-    });
+    Vue.component('count-animation', componentsList.CountAnimation);
+    Vue.component('CountAnimation', componentsList.CountAnimation);
   }
 };
 /* harmony default export */ var src_0 = (src_CountAnimation);

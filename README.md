@@ -1,52 +1,52 @@
-# Count Animation Library
+# Count Animation Vue
 
 ## Introduction
-The Animated Number Library is a JavaScript library for animating numbers in React and Vue.js applications. It provides a simple way to animate a number from one value to another with a smooth transition.
+The Animated Number Library is a JavaScript library for animating numbers in VueJS 3 applications. It provides a simple way to animate a number from one value to another with a smooth transition.
 
-## Installation
-To install the library, you can use NPM:
-
-``` typescript
-npm install count_animation
+### Installation
+```bash
+npm install count-animation-vue
 ```
 
-## Usage
-To use the Animated Number Library, you need to import the **`AnimatedNumber`** component from the library and use it in your React or Vue.js application.
+### Usage
+To use the Animated Number Library, you need to import the **`CountAnimation`** component from the library and use it in your VueJS 3 application.
 
-Here's an example of how to use it in React:
+```js
+import { createApp } from 'vue'
+import CountAnimationVue from 'count-animation-vue'
 
-``` jsx
-import AnimatedNumber from 'count_animation';
-
-function App() {
-  return (
-    <div>
-      <AnimatedNumber value={42} />
-    </div>
-  );
-}
-
+const app = createApp(App)
+app.use(CountAnimationVue)
 ```
 
-In this example, the **`AnimatedNumber`** component will animate the number from 0 to 42 with a default animation time of 1000 milliseconds.
-
-You can also customize the animation time by passing the **`animationTime`** prop to the component:
-
-``` jsx
-import AnimatedNumber from 'count_animation';
-
-function App() {
-  return (
-    <div>
-      <AnimatedNumber value={42} animationTime={2000} />
-    </div>
-  );
-}
+Here's an example:
+``` vue
+<template>
+  <div>
+    <CountAnimation :value="100" />
+  </div>
+</template>
 ```
-In this example, the **`AnimatedNumber`** component will animate the number from 0 to 42 with an animation time of 2000 milliseconds.
 
-Contributing
-If you want to contribute to the Animated Number Library, you can submit pull requests or issues on our GitHub repository: https://github.com/mkbek/count_animation.
+And you can also set the **`start`** number and animation **`duration`** in milliseconds
 
-License
-The Animated Number Library is licensed under the [MIT License](https://github.com/mkbek/count_animation/blob/main/LICENSE).
+``` vue
+<template>
+  <div>
+    <CountAnimation :start="10" :value="100" :duration="1000" />
+  </div>
+</template>
+```
+In this example, the AnimatedNumber component will animate the number from 10 to 100 with an animation time of 1000 milliseconds.
+
+### Props
+| Name     | Type   | Default | Description                            |
+|----------|--------|---------|----------------------------------------|
+| start    | Number | 0       | The initial number                     |
+| value    | Number | 1000    | The final number                       |
+| duration | Number | 500     | The animation duration in milliseconds |
+
+
+Contributing If you want to contribute to the Animated Number Library, you can submit pull requests or issues on our GitHub repository: https://github.com/mkbek/count-animation-vue.
+
+License The Animated Number Library is licensed under the [MIT License](./LICENSE).
